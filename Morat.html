@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <meta charset="UTF-8">     
+        <link rel="stylesheet" href="css/tabla.css">
+    </head>
+<body>
+    <script>
+        function change(url)
+        {
+            var au = document.getElementById('player');
+            au.src=url;
+            au.pause();
+            au.load();
+            au.play();
+        }
+    </script>
+    <div id="main-container">
+        <p><a href="artistas.html" ><img src="https://shed-builder.bbcinnovation.com.au/img/icons/design-screen/white_prev.png" align="left" width="30" height="30" >
+        </a><img src="https://th.bing.com/th/id/R.f681fb2daca7048b1f02893dc1078ebc?rik=w3Ak9jV5RFGIwQ&riu=http%3a%2f%2fwww-scf.usc.edu%2f~mdemirji%2facad275%2fimages%2farrow.png&ehk=UO1EUmsdU6lgZ%2fciOmjGnZBcbEm03FjUiRLXqTRPCFo%3d&risl=&pid=ImgRaw&r=0" align="left" width="30" height="30" > 
+        <img src="https://www.freepnglogos.com/uploads/beats-music-logo-png-6.png" align="right" width="80" height="80" ></p><br>    <center><h1 id = "nombre">MORAT</h1></center>
+    <center>
+    <table border="0"> 
+        <thead> 
+            <tr> 
+                <th ><center><img src="imagen/thismorat.jpg" align="center" width="169" height="150" ></center></th>
+                <th colspan="3" align="left">
+                        <H2>THIS IS MORAT</H2>
+                        <p>This is Morat. Sus mejores exitos. todos en una playlist</p>
+                </th>
+            </tr>
+            <tr> 
+                <TH align="center">#</TH>
+                <th>
+                   TÍTULO
+                </th> 
+                <th>ALBUM</th> 
+                <th>DURACIÓN</th>
+            </tr> 
+            
+            
+        </thead> 
+
+        <tr onclick="change('http://192.168.212.248/Rockola/musica/Morat Amor Con Hielo.mp3')"> 
+            <td  align="center"><center> 1 <img src="imagen/morat2.jfif" align="center" width="50" height="48" ></center></td>
+            <td><a id="uno" onclick="change('http://192.168.212.248/Rockola/musica/Morat Amor Con Hielo.mp3')">Amor Con  Hielo</a></td> 
+            <Td>Sobre El Amor y Sus Efectos Secundarios... Y Unas Cuantas Cosas... Más</Td>
+            <td>3:00</td>
+        </tr>
+        <tr onclick="change('http://192.168.212.248/Rockola/musica/Morat Cómo Te Atreves.mp3')"> 
+            <td align="center"><center> 2 <img src="imagen/morat3.jfif" align="center" width="50" height="48" ></center></td>
+            <td><a href="#" id="uno" onclick="change('http://192.168.212.248/Rockola/musica/Morat Cómo Te Atreves.mp3')">Cómo Te Atreves</a></td>
+            <Td>Sobre El Amor y Sus Efectos Secundarios</Td>
+            <td>3:02</td>
+        </tr> 
+        <tr onclick="change('http://192.168.212.248/Rockola/musica/Morat Cuando Nadie Ve.mp3')"> 
+            <td align="center"><center> 3 <img src="imagen/morat4.jpg" align="center" width="50" height="48" ></center></td>
+            <td><a href="#" id="uno" onclick="change('http://192.168.212.248/Rockola/musica/Morat Cuando Nadie Ve.mp3')">Cuando Nadie Ve</a></td>
+            <Td>Balas Perdidas</Td>
+            <td>4:01</td>
+        </tr> 
+        <tr onclick="change('http://192.168.212.248/Rockola/musica/Morat Juanes Besos En Guerra.mp3')"> 
+            <td align="center"><center> 4 <img src="imagen/morat1.jfif" align="center" width="50" height="48" ></center></td>
+            <td><a href="#" id="uno" onclick="change('http://192.168.212.248/Rockola/musica/Morat Juanes Besos En Guerra.mp3')">Besos En Guerra</a></td>
+            <Td>Balas Perdidas</Td>
+            <td>3:59</td>
+        </tr> 
+        <tr onclick="change('http://192.168.212.248/Rockola/musica/Morat No Hay Más Que Hablar.mp3')"> 
+            <td align="center"><center> 5 <img src="imagen/morat5.jfif" align="center" width="50" height="48" ></center></td>
+            <td><a href="#" id="uno" onclick="change('http://192.168.212.248/Rockola/musica/Morat No Hay Más Que Hablar.mp3')">No Hay Más Que Hablar</a></td>
+            <Td>No Hay Más Que Hablar</Td>
+            <td>3:45</td>
+        </tr>
+        
+        <tr> 
+            <th colspan="4"><center><audio src="" id="player" controls=""></audio></center></td>
+        </tr>
+    </table>
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="UTF-8">       
+        <link rel="stylesheet" href="css/tabla.css">
+    </head>
+<body>
+    <script>
+        function change(url)
+        {
+            var au = document.getElementById('player');
+            au.src=url;
+            au.pause();
+            au.load();
+            au.play();
+        }
+    </script>
+    <div id="main-container">
+        <p><a href="artistas.html" ><img src="https://shed-builder.bbcinnovation.com.au/img/icons/design-screen/white_prev.png" align="left" width="30" height="30" >
+            </a><img src="https://th.bing.com/th/id/R.f681fb2daca7048b1f02893dc1078ebc?rik=w3Ak9jV5RFGIwQ&riu=http%3a%2f%2fwww-scf.usc.edu%2f~mdemirji%2facad275%2fimages%2farrow.png&ehk=UO1EUmsdU6lgZ%2fciOmjGnZBcbEm03FjUiRLXqTRPCFo%3d&risl=&pid=ImgRaw&r=0" align="left" width="30" height="30" > 
+            <img src="https://www.freepnglogos.com/uploads/beats-music-logo-png-6.png" align="right" width="80" height="80" ></p><br>
+        
+    <center><h1 id = "nombre">TAYLOR SWIFT</h1></center>
+    <center>
+    <table border="0"> 
+        <thead> 
+            <tr> 
+                <th ><center><img src="imagen/thistaylor.jfif" align="center" width="169" height="150" ></center></th>
+                <th colspan="3" align="left">
+                        <H2>THIS IS TAYLOR</H2>
+                        <p>This is Taylor. Sus mejores exitos. todos en una playlist</p>
+                </th>
+            </tr>
+            <tr> 
+                <TH align="center">#</TH>
+                <th>
+                   TÍTULO
+                </th> 
+                <th>ALBUM</th> 
+                <th>DURACIÓN</th>
+            </tr> 
+            
+            
+        </thead> 
+
+        <tr onclick="change('http://192.168.212.248/Rockola/musica/Taylor Swift AntiHero.mp3')"> 
+            <td  align="center"><center> 1 <img src="imagen/ta1.jfif" align="center" width="50" height="48" ></center></td>
+            <td><a href="#" id="uno" onclick="change('http://192.168.212.248/Rockola/musica/Taylor Swift AntiHero.mp3')">AntiHero</a></td> 
+            <Td>Midnights</Td>
+            <td>5:09</td>
+        </tr>
+        <tr onclick="change('http://192.168.212.248/Rockola/musica/Taylor Swift Blank Space.mp3')"> 
+            <td align="center"><center> 2 <img src="imagen/ta2.jfif" align="center" width="50" height="48" ></center></td>
+            <td><a href="#" id="uno" onclick="change('http://192.168.212.248/Rockola/musica/Taylor Swift Blank Space.mp3')">Blank Space</a></td>
+            <Td>1989</Td>
+            <td>4:32</td>
+        </tr> 
+        <tr onclick="change('http://192.168.212.248/Rockola/musica/Taylor Swift Look What You Made Me Do.mp3')"> 
+            <td align="center"><center> 3 <img src="imagen/ta3.jfif" align="center" width="50" height="48" ></center></td>
+            <td><a href="#" id="uno" onclick="change('http://192.168.212.248/Rockola/musica/Taylor Swift Look What You Made Me Do.mp3')">Look What Made Me Do</a></td>
+            <Td>reputation</Td>
+            <td>4:15</td>
+        </tr> 
+        <tr onclick="change('http://192.168.212.248/Rockola/musica/Taylor Swift Shake It Off.mp3')"> 
+            <td align="center"><center> 4 <img src="imagen/ta4.jfif" align="center" width="50" height="48" ></center></td>
+            <td><a href="#" id="uno" onclick="change('http://192.168.212.248/Rockola/musica/Taylor Swift Shake It Off.mp3')">Shake It Off</a></td>
+            <Td>1989</Td>
+            <td>4:01</td>
+        </tr> 
+        
+        <tr> 
+            <th colspan="4"><center><audio src="" id="player" controls=""></audio></center></td>
+        </tr>
+    </table>
+</center>
+</div>
+</body>
+</html>
